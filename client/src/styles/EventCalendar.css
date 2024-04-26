@@ -1,0 +1,31 @@
+.calendar-card-null {
+    width: 85px;
+    height: 95px;
+    background-color: gray;
+}
+
+.calendar-card {
+    width: 85px;
+    height: 95px;
+}
+
+.calendar-card:hover {
+    background-color: #5271ff;
+  }
+
+.calendar-card:active {
+  background-color: lightgray;
+}
+
+.calendar {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.calendar-container {
+    width: 890px;
+    display: flex;
+    flex-direction: column;
+}

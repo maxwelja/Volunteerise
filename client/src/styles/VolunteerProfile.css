@@ -1,0 +1,244 @@
+.container {
+  color: black;
+  border-radius: 25px;
+  background-color: #38b6ff;
+  border: 2px solid #444;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+#mainContainer {
+  display:block;
+  background-color: #5271ff;
+  min-width: 950px;
+  max-width: 950px;
+  height: 855px;
+}
+#logo1 {
+  max-width: 150px;
+  background-color: #FFF;
+}
+#logo2 {
+  max-width: 150px;
+  background-color: #FFF;
+}
+#container1 {
+  max-height: 120px;
+  font-size: 48px;
+  justify-content: space-around;
+  align-items: space-between;
+}
+#container2 {
+  display:block;
+  height: 280px;
+  font-size: 24px;
+  justify-content: center;
+  margin-left: 25px;
+}
+#container3 {
+  font-size: 48px;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+  width: 400px;
+  margin: 0px;
+}
+#container4 {
+  font-size: 32px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 260px;
+  width: 400px;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+#container5 {
+  flex-direction: column;
+  justify-content: space-around;
+  height: 110px;
+  width: 400px;
+  margin: 0px;
+}
+#infoContainer {
+  margin: 5px;
+  min-height: calc(100% - 10px);
+  min-width: calc(100% - 10px);
+  max-width: auto;
+  padding: 10px;
+  background-color: #FFF;
+  border-radius: 10px;
+  flex-direction: column;
+  text-align: left;
+  font-size: 20px;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#karma{
+  border-radius: 25px;
+  height: 120px;
+  width: 120px;
+  background-color: #FFF;
+}
+#hours{
+  font-size: 36px;
+  border-radius: 25px;
+  height: 80px;
+  width: 80px;
+  background-color: #FFF;
+}
+#events {
+  font-size: 36px;
+  border-radius: 25px;
+  height: 80px;
+  width: 80px;
+  background-color: #FFF;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  padding: 0px;
+}
+#box1 {
+  height: 420px;
+}
+#box2 {
+  display: flex;
+  justify-content: space-evenly;
+  height: 200px;
+  width: 400px;
+  margin: 0px;
+}
+#box3 {
+  height: 200px;
+  width: 300px;
+  margin: 0px;
+}
+#box4 {
+  height: 200px;
+  width: 300px;
+  margin: 0px;
+}
+#main {
+  padding: 10px;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+}
+
+.row{
+  display:flex;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+#row2 {
+  justify-content: space-between;
+  max-height: 300px;
+  margin: 10px;
+  width: auto;
+}
+
+.col {
+  text-align: left;
+}
+#mainCol {
+  justify-self: center;
+  justify-content: space-evenly;
+  align-items: space-between;
+  height: 100vh;
+  width: 950px;
+  padding: 0px;
+}
+#sidebar {
+  background-color: #555;
+  height: 100vh;
+  max-width: 30vw;
+}
+#logo:hover {
+  filter: brightness(120%);
+}
+#logo:active {
+  box-shadow: inset 2px 2px 10px #000;
+}
+#title {
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+#infoColumn{
+  margin-left: 5px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  max-height: calc(100%-10px);
+  width: auto;
+  height: auto;
+}
+#kRating {
+  display: flex;
+  max-width: 150px;
+  align-items: center;
+  text-align: left;
+}
+#bot-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+}
+#bot-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+  height: 400px;
+}
+#vhours {
+  max-width: 150px;
+}
+#attended {
+  max-width: 150px;
+}
+#profile {
+  display: block;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #444;
+  background-color: #38b6ff;
+  max-width: 284px;
+  max-height: 284px;
+  margin-left: 12px;
+}
+
+.btn {
+  font-size: 24px;
+  border-radius: 10px;
+  margin: 4px;
+  height: 50px;
+  width: 300px;
+  border: 2px solid #444;
+}
+
+button:hover {
+  filter: brightness(120%);
+  box-shadow: 5px 5px 5px #222;
+}
+
+button:active {
+  box-shadow: inset 2px 2px 10px #222;
+}
+
+.img {
+  display: flex;
+  border-radius: 25px;
+}

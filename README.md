@@ -18,7 +18,6 @@
 
 
 # 5) Navigate to the 'server' directory and install the necessary dependencies:
-   Note: nodemon is required for the use of 'npm run dev'
 ### `npm install cors dotenv express mongodb mongoose nodemon`
 
 

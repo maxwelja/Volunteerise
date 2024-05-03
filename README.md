@@ -3,8 +3,8 @@
 
 ## Installation/Use Instructions:
 
-# 1) To build the skeleton app:
-### `npm create-react-app client`
+# 1) To build the skeleton app (takes a few minutes):
+### `npx create-react-app client`
 
 
 # 2) Navigate to the 'client' directory and install the necessary dependencies:

@@ -1,6 +1,6 @@
-## Installation/Use Instructions:
-# It's expected that npm and node.js are installed and available for use.
-# The following steps are essentially a walkthrough to build a React App with our custom frontend and backend files.
+# Installation/Use Instructions:
+## It's expected that npm and node.js are installed and available for use.
+## The following steps are essentially a walkthrough to build a React App with our custom frontend and backend files.
 
 
 # 1) To build the skeleton app (takes a few minutes):

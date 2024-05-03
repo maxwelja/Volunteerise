@@ -20,7 +20,7 @@ const routes = require('./routing');
 app.use('/api/', routes);
 
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI, { dbName: 'Volunteerise'})
     .then (() => {
         // listen for requests on given port
         app.listen(process.env.PORT, () => {

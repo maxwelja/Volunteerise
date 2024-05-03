@@ -1,7 +1,7 @@
 // Handles CRUD operations for event objects in database
-const model = require('../models/models');
-const Event = model.event;
-const Test = model.test;
+const Event = require('../models/event.model');
+const Volunteer = require('../models/volunteer.model');
+const Organization = require('../models/organization.model');
 const mongoose = require('mongoose');
 
 // create a new event and post to database
@@ -10,7 +10,9 @@ const createEvent = async (req, res) => {
         const data = new Event({
             title: req.body.title,
             organization: req.body.organization,
-            location: req.body.location
+            location: req.body.location,
+            date: req.body.date,
+            hosts: req.body.hosts
         });
         const event = await data.save();
         res.status(200).json(event);
@@ -84,68 +86,6 @@ const deleteEvent = async (req, res) => {
     res.status(200).json(event);
 };
 
-/* TEST */
-
-const rAllTest = async (req,res) => {
-    let query = {};
-    if (Object.keys(req.query).length == 0) {
-        query = {};
-    } else {
-        query = req.query;
-    }
-    console.log(req.url, query);
-    const users = await Test.find(query).sort({createdAt:-1});
-    if (!users) {
-        return res.status(404).json({error: "Nothing there, boss."});
-    }
-    console.log(users);
-    return res.status(200).json(users);
-};
-
-// read one user by mongo document id
-const rTest = async (req,res) => {
-    const {id} = req.params;
-
-    // error
-    if (!mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(400).json({error: "No good, boss."});
-    }
-
-    // perform the search based on ID
-    const user = await Test.findById(id);
-
-    // error
-    if (!user) {
-        return res.status(404).json({error: "Nothing there, boss."});
-    }
-
-    // success state
-    return res.status(200).json(user);
-};
-
-// a post request
-// I'm still shaky on this one, but I know it works
-const cTest = async (req, res) => {
-    try {
-        const user = new Test(req.body);
-        let result = await user.save();
-        result = result.toObject();
-        
-        if (result) {
-            res.send(req.body);
-            console.log(result);
-        } else {
-            console.log("User already register");
-        }
- 
-    } catch (e) {
-        res.send("Something Went Wrong");
-    }
-};
-
-/* TEST */
-
 module.exports = {
     createEvent, readEvent, readAll, updateEvent, deleteEvent,
-    cTest, rTest, rAllTest//, uTest, dTest
 };

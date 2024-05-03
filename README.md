@@ -3,7 +3,7 @@
 ## The following steps are essentially a walkthrough to build a React App with our custom client and server source files.
 
 
-# 1) To build the skeleton app (takes a few minutes):
+# 1) Build the skeleton client app (takes a few minutes):
 ### `npx create-react-app client`
 
 

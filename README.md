@@ -1,4 +1,4 @@
-# This application is in early development
+# Development for this application has stopped
 # The Mongo database used to run this app is no longer active and there are currently no plans to re-instate it
 
 # Installation/Use Instructions:

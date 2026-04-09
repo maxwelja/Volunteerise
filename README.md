@@ -1,5 +1,5 @@
-# This is still in the development stage
-# Do not enter any sensitive information into the app after installation
+# This application is in early development
+# The Mongo database used to run this app is no longer active and there are currently no plans to re-instate it
 
 # Installation/Use Instructions:
 ## It's expected that npm and node.js are installed and available for use.
